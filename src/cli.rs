@@ -27,6 +27,8 @@ pub enum Commands{
         column: Option<String>,
         #[arg(short, long)]
         value: Option<String>,
+        #[arg(long)]
+        r#where: String,
     },
     Exit,
 }
